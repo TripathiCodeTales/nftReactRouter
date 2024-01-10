@@ -1,0 +1,385 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.CardList {
+
+  display: inline-block;
+  padding: 0px;
+  margin: 12px 2px;
+  border: 2px solid #282c34;
+  border-radius: 12px;
+  background-color: azure;
+  font-size: 25px;
+  color: black;
+
+}
+
+.imagelist {
+  height: 350px;
+  width: 380px;
+  border-radius: 12px;
+  float: left;
+}
+
+.card {
+  margin:0%;
+  padding:0%;
+  height: 100%;
+  background-color:#c1c9cc;
+}
+
+#CardDetail {
+  max-width: 100%;
+  height: 655px;
+  /* background: linear-gradient(#282c34 100%, transparent 20% ) */
+  background-color: #999fac;
+  /* margin: 20%;  */
+}
+
+.imageBig {
+  border: transparent;
+  justify-content: center;
+  margin-left: 530px;
+  margin-top: 50px;
+  height: 350px;
+  width: 380px;
+}
+
+.Details {
+  margin-top: 30px;
+  font-size: 30px;
+  margin-left: 650px;
+  color: #102553;
+  font-weight:600;
+  
+  
+}
+
+.adminBox {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 25px;
+  width: 70px;
+  font-size: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+}
+
+.form-control {
+  margin: 40px;
+
+}
+
+#Form {
+  border: 2px solid #282c34;
+  margin: 200px;
+  margin-left: 500px;
+  margin-right: 350px;
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(223, 209, 17, 0.897), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f9f9fce7;
+  border-radius: 5%;
+
+}
+
+#Login {
+  content: "";
+  background-image: url("backgroundPhoto.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.submit-button,
+.submit-buttn {
+  margin-left: 75px;
+  size: 70px;
+  position: fixed;
+  color: wheat;
+  width: 90px;
+  background-color: blue;
+  font-family: 'Times New Roman', Times, serif;
+  border: transparent;
+  padding: 5px;
+  padding-right: 5px 10px 5px 10px;
+  font: bold;
+  font-size: large;
+}
+
+.admin {
+  height: 20px;
+  width: 50px;
+  background-position: center;
+}
+
+.error {
+  font-size: 10px;
+  color: white;
+  border: 1px solid rgb(177, 173, 173);
+  background-color: red;
+  margin-top: 1px;
+  width: 120px;
+}
+
+
+/* modal */
+.modalContainer {
+  position: fixed;
+  top: 0;  bottom: 0;
+ left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+}
+
+.modal {
+  width: 26vw;
+  height:auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  position: center;
+  margin-top: 50px;
+  color: rgb(42, 47, 85);
+  
+  .modal_header-label {
+    margin-left:40px ;
+  }
+  .modal-close,
+  .submit {
+    background-color:blue;
+    padding: 5px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+  }
+  
+  
+}
+
+.modal_header {
+ margin-left:3%;
+}
+.main-modal {
+  margin-left:20% ;
+}
+
+
+.modal-close {
+  margin-left: 90px;
+  margin-right: 20px;
+}
+
+/* Add cart page */
+.addcart {
+  
+   height: 100%;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.admin-container,
+.edit-container {
+  text-align:center;
+  /* height: 70px; */
+  font-size: 400%;
+  margin: 0%;
+  padding:30px;
+  background-color:#646d7e;
+  color:#fff;
+}
+.admin-form {
+text-align: center;
+  width: 100% ;  
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  background-color:#b6c0c4;
+  padding-top: 50px;
+
+}
+.submit-btn {
+  color:#fff;
+  background-color: blue;
+  margin: 0%;
+  padding: 7px;
+  border: blue;
+  margin-left: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.edit-list {
+  background-color: blue;
+  font-family: 'Times New Roman', Times, serif;
+  border: transparent;
+  padding: 7px;
+  font-size: 17px;
+  margin: 0%;
+  color: #fff;
+ left: 70%;
+ top:80%;
+  margin-left: 10px;
+  border-radius: 10px;
+  width:100px;
+}
+
+input[type = "text"] {
+  border: 1px solid #9ca1ac;
+  width: 50%;
+  padding: 12px 20px;
+  /* display: flex; */
+  justify-content:center;
+} 
+
+
+ /* // deleteCart */
+.deleteCart {
+  background-color: #b6c0c4;;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
+  height:120vh;
+  align-items: center;
+  flex-wrap: wrap;
+  /* flex-flow: column wrap; */
+}
+.deleteTitle{
+ 
+  color: #191e29;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.deleteItem {
+  width:500px ;
+  height: 80px;
+  background-color: #fff;
+  font-weight:500;
+  border: 1px solid black;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.delete-btn {
+  background-color: blue;
+  font-family: 'Times New Roman', Times, serif;
+  border: transparent;
+  padding: 10px;
+  padding-right: 10px;
+  font: bold;
+  font-size: large;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.editNav {
+  position:relative;
+  left:250px;
+}
+
+/* editcart */
+.edit-page{
+  background-color:#b6c0c4;
+  height: 100vh;
+  width:100vw;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  
+}
+
+
+.submit-buttn {
+  /* margin-top: 40px; */
+  padding: 2px;
+  font-size: large;
+  width: 120px;
+  padding-left: 0px;
+  border-radius: 5px;
+  padding-right: 0px;
+  position:absolute;
+  top:600px;
+  color: #fff;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+
+.cancel {
+  position:absolute;
+  top:600px;
+  left: 580px;
+  border:transparent;
+  background-color: blue;
+  color: #fff;
+  padding: 2px;
+  font-family: 'Times New Roman', Times, serif;
+  width:130px;
+  font-size: large;
+  border-radius: 5px;
+  font-weight: 200px;
+}
